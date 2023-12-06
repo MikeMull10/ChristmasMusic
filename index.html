@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Music</title>
+    <link rel="icon" type="image/x-icon" href="snowflake.ico">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="music.js" defer></script>
+</head>
+
+<video playsinline autoplay muted loop id="bgvid">
+    <source src="Christmas Wallpaper.mp4" type="video/mp4">
+</video>
+
+<body>
+
+    <div class="container">
+        <img src="" class="album">
+        <p class="song"></p>
+    </div>
+
+</body>
+
+<script>
+    /* Get the documentElement (<html>) to display the page in fullscreen */
+    var elem = document.documentElement;
+    
+    /* View in fullscreen */
+    function openFullscreen() {
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.webkitRequestFullscreen) { /* Safari */
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE11 */
+            elem.msRequestFullscreen();
+        }
+    }
+    
+    /* Close fullscreen */
+    function closeFullscreen() {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) { /* Safari */
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) { /* IE11 */
+            document.msExitFullscreen();
+        }
+    }
+
+    document.addEventListener("keydown", e => { if(e.key.toUpperCase() === "F") { openFullscreen(); } });
+</script>
+</html>
