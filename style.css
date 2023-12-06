@@ -68,3 +68,7 @@ img {
     transform: translateY(-8vh);
     z-index: 2;
 }
+
+img, .container {
+    user-select: none;
+}

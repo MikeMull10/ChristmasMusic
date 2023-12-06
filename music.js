@@ -3,7 +3,13 @@ const music_list = [
         title: "Deck the Halls",
         artist: "Nat King Cole",
         music: "music/Deck the Halls - Nat King Cole.mp3",
-        img: "imgs/NatKing"
+        img: "imgs/NatKingCole.jpg"
+    },
+    {
+        title: "White Christmas (1947)",
+        artist: "Bing Crosby",
+        music: "music/White Christmas (1947 Version).mp3",
+        img: "imgs/BingCrosby.jpg"
     }
 ]
 
@@ -32,7 +38,7 @@ function loadTrack(track_index) {
 
     album.src = shuffle_music[track_index].img;
 
-    song = shuffle_music[track_index].title + " by " + shuffle_music[track_index].artist;
+    song.textContent = shuffle_music[track_index].title + " by " + shuffle_music[track_index].artist;
 
     // updateTimer = setInterval(setUpdate, 1000);
 
@@ -52,4 +58,17 @@ function nextTrack() {
 function playTrack() {
     curr_track.play();
     isPlaying = true;
+}
+
+function stopTrack() {
+    curr_track.pause();
+    isPlaying = false;
+}
+
+function playPause() {
+    if (isPlaying) {
+        stopTrack();
+    } else {
+        playTrack();
+    }
 }
