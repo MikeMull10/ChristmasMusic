@@ -10,6 +10,30 @@ const music_list = [
         artist: "Bing Crosby",
         music: "music/White Christmas (1947 Version).mp3",
         img: "imgs/BingCrosby.jpg"
+    },
+    {
+        title: "O Holy Night",
+        artist: "Bing Crosby",
+        music: "music/O Holy Night.mp3",
+        img: "imgs/BingCrosby.jpg"
+    },
+    {
+        title: "Little Drummer Boy",
+        artist: "Bing Crosby",
+        music: "music/Little Drummer Boy.mp3",
+        img: "imgs/BingCrosby.jpg"
+    },
+    {
+        title: "Jingle Bell Rock",
+        artist: "Bobby Helms",
+        music: "music/Jingle Bell Rock.mp3",
+        img: "imgs/BobbyHelms.jpg"
+    },
+    {
+        title: "I Want a Hippopotamus for Christmas",
+        artist: "Gayla Peevey",
+        music: "music/I Want a Hippopotamus for Christmas.mp3",
+        img: "imgs/GaylaPeevey.jpg"
     }
 ]
 
@@ -55,20 +79,26 @@ function nextTrack() {
     playTrack();
 }
 
+function prevTrack() {
+    if (track_index > 0) {
+        track_index -= 1;
+    } else {
+        track_index = music_list.length - 1;
+    }
+    loadTrack(track_index);
+    playTrack();
+}
+
 function playTrack() {
     curr_track.play();
     isPlaying = true;
 }
 
-function stopTrack() {
+function pauseTrack() {
     curr_track.pause();
     isPlaying = false;
 }
 
 function playPause() {
-    if (isPlaying) {
-        stopTrack();
-    } else {
-        playTrack();
-    }
+    isPlaying ? pauseTrack() : playTrack();
 }

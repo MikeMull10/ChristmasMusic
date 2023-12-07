@@ -48,7 +48,11 @@
         }
     }
 
-    document.addEventListener("keydown", e => { if(e.key.toUpperCase() === "F") { openFullscreen(); } });
-    document.addEventListener("keydown", e => { if(e.key.toUpperCase() === "K") { playPause(); } });
+    document.addEventListener("keydown", e => {
+        if (e.key.toUpperCase() === "F") { openFullscreen(); }
+        else if (e.key.toUpperCase() === "K") { playPause(); }
+        else if (e.key.toUpperCase() === "J") { prevTrack(); }
+        else if (e.key.toUpperCase() === "L") { nextTrack(); }
+    });
 </script>
 </html>
