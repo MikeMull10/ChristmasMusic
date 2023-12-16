@@ -34,16 +34,37 @@ const music_list = [
         artist: "Gayla Peevey",
         music: "music/I Want a Hippopotamus for Christmas.mp3",
         img: "imgs/GaylaPeevey.jpg"
+    },
+    {
+        title: "Sleigh Ride",
+        artist: "Harry Connick Jr.",
+        music: "music/Sleigh Ride.mp3",
+        img: "imgs/HarryConnickJr.jpg"
+    },
+    {
+        title: "When My Heart Finds Christmas",
+        artist: "Harry Connick Jr.",
+        music: "music/When My Heart Finds Christmas.mp3",
+        img: "imgs/HarryConnickJr.jpg"
+    },
+    {
+        title: "Feliz Navidad",
+        artist: "Jose Feliciano",
+        music: "music/FelizNavidad.mp3",
+        img: "imgs/JoseFeliciano.jpeg"
+    },
+    {
+        title: "Let It Snow! Let It Snow! Let It Snow!",
+        artist: "Dean Martin",
+        music: "music/Dean Martin - Let It Snow! Let It Snow! Let It Snow! (Official Video).mp3",
+        img: "imgs/DeanMartin.jpg"
     }
 ]
 
-const shuffle_music = music_list.sort((a, b) => 0.5 - Math.random());
+const shuffle_music = music_list.sort((a, b) => 0.5 - Math.random());  //  Shuffle the music order on site load
 
 let song = document.querySelector(".song");
 let album = document.querySelector(".album");
-
-console.log(song);
-console.log(album);
 
 let curr_track = document.createElement('audio');
 

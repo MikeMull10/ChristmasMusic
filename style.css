@@ -55,9 +55,9 @@ img {
 }
 
 .song {
-    margin-top: 20px; /* Adjust the spacing between the image and text */
+    margin-top: 1em; /* Adjust the spacing between the image and text */
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.25em;
     font-family: "Lobster", cursive;
     color: white;
     text-shadow: -1px -1px 0 black, 
