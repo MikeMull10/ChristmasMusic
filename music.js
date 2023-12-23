@@ -58,8 +58,70 @@ const music_list = [
         artist: "Dean Martin",
         music: "music/Dean Martin - Let It Snow! Let It Snow! Let It Snow! (Official Video).mp3",
         img: "imgs/DeanMartin.jpg"
+    },
+    {
+        title: "Holly Jolly Christmas",
+        artist: "Burl Ives",
+        music: "music/Holly Jolly Christmas - Burl Ives - HD Audio.mp3",
+        img: "imgs/BurlIves.jpg"
+    },
+    {
+        title: "Rudolph The Red-Nosed Reindeer",
+        artist: "Burl Ives",
+        music: "music/Burl lves - Rudolph The Red-Nosed Reindeer (Official Video).mp3",
+        img: "imgs/BurlIves.jpg"
+    },
+    {
+        title: "Christmas (Baby Please Come Home)",
+        artist: "Darlene Love",
+        music: "music/Darlene Love - Christmas (Baby Please Come Home).mp3",
+        img: "imgs/ChristmasGift.jpg"
+    },
+    {
+        title: "Sleigh Ride",
+        artist: "The Ronettes",
+        music: "music/The Ronettes - Sleigh Ride (Official Audio).mp3",
+        img: "imgs/ChristmasGift.jpg"
+    },
+    {
+        title: "Little Saint Nick",
+        artist: "The Beach Boys",
+        music: "music/The Beach Boys - Little Saint Nick (Official Lyric Video).mp3",
+        img: "imgs/BeachBoys.jpg"
+    },
+    {
+        title: "Sleigh Ride",
+        artist: "The Ronettes",
+        music: "music/The Ronettes - Sleigh Ride (Official Audio).mp3",
+        img: "imgs/ChristmasGift.jpg"
+    },
+    {
+        title: "Imperial March x Carol of The Bells",
+        artist: "Samuel Kim",
+        music: "music/Imperial March x Carol of The Bells.mp3",
+        img: "imgs/StarWars.png"
+    },
+    {
+        title: "Chestnuts Roasting on an Open Fire",
+        artist: "Nat King Cole",
+        music: "music/Nat King Cole Chestnuts roasting on an open fire.mp3",
+        img: "imgs/NatKingCole.jpg"
+    },
+    {
+        title: "O Holy Night",
+        artist: "Nat King Cole",
+        music: "music/Nat King Cole - O Holy Night.mp3",
+        img: "imgs/NatKingCole.jpg"
+    },
+    {
+        title: "God Rest Ye Merry, Gentlemen",
+        artist: "Nat King Cole",
+        music: "music/Nat King Cole - God Rest Ye Merry, Gentlemen.mp3",
+        img: "imgs/NatKingCole.jpg"
     }
 ]
+
+console.log("Total Songs: " + music_list.length);
 
 const shuffle_music = music_list.sort((a, b) => 0.5 - Math.random());  //  Shuffle the music order on site load
 
