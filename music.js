@@ -170,7 +170,7 @@ const music_list = [
     {
         title: "Here Comes Santa Claus",
         artist: "Gene Autry",
-        music: "music/Here Comes Santa Claus - (Right Down Santa Claus Lane) (Audio)",
+        music: "music/Here Comes Santa Claus - (Right Down Santa Claus Lane) (Audio).mp3",
         img: "imgs/GeneAutry.jpg"
     },
     {
