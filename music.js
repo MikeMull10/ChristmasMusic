@@ -118,6 +118,66 @@ const music_list = [
         artist: "Nat King Cole",
         music: "music/Nat King Cole - God Rest Ye Merry, Gentlemen.mp3",
         img: "imgs/NatKingCole.jpg"
+    },
+    {
+        title: "O Tannenbaum",
+        artist: "Vince Guaraldi Trio",
+        music: "music/Vince Guaraldi Trio - O Tannenbaum.mp3",
+        img: "imgs/CharlieBrown.jpg"
+    },
+    {
+        title: "What Child Is This",
+        artist: "Vince Guaraldi Trio",
+        music: "music/Vince Guaraldi Trio - What Child Is This.mp3",
+        img: "imgs/CharlieBrown.jpg"
+    },
+    {
+        title: "My Little Drum",
+        artist: "Vince Guaraldi Trio",
+        music: "music/Vince Guaraldi Trio - My Little Drum.mp3",
+        img: "imgs/CharlieBrown.jpg"
+    },
+    {
+        title: "Christmas Time Is Here",
+        artist: "Vince Guaraldi Trio",
+        music: "music/Vince Guaraldi Trio - Christmas Time Is Here.mp3",
+        img: "imgs/CharlieBrown.jpg"
+    },
+    {
+        title: "Linus and Lucy",
+        artist: "Vince Guaraldi Trio",
+        music: "music/Vince Guaraldi Trio - Christmas Time Is Here.mp3",
+        img: "imgs/CharlieBrown.jpg"
+    },
+    {
+        title: "Christmas Time Is Here",
+        artist: "Vince Guaraldi Trio",
+        music: "music/Vince Guaraldi Trio - Linus And Lucy.mp3",
+        img: "imgs/CharlieBrown.jpg"
+    },
+    {
+        title: "Rockin' Around the Christmas Tree",
+        artist: "Brenda Lee",
+        music: "music/Rockin' Around the Christmas Tree.mp3",
+        img: "imgs/BrendaLee.jpg"
+    },
+    {
+        title: "It's the Most Wonderful Time of the Year",
+        artist: "Andy Williams",
+        music: "music/Andy Williams - It's the Most Wonderful Time of the Year (Official Audio).mp3",
+        img: "imgs/AndyWilliams.jpg"
+    },
+    {
+        title: "Here Comes Santa Claus",
+        artist: "Gene Autry",
+        music: "music/Here Comes Santa Claus - (Right Down Santa Claus Lane) (Audio)",
+        img: "imgs/GeneAutry.jpg"
+    },
+    {
+        title: "Mele Kalikimaka",
+        artist: "Bing Crosby, The Andrews Sisters",
+        music: "music/Bing Crosby, The Andrews Sisters - Mele Kalikimaka.mp3",
+        img: "imgs/BingCrosby.jpg"
     }
 ]
 
