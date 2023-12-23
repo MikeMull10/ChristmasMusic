@@ -270,10 +270,10 @@ const music_list = [
         img: "imgs/FrankSinatra.jpg"
     },
     {
-        title: "All I Want For Christmas (Is My Two Front Teeth)",
-        artist: "Nat King Cole Trio",
-        music: "music/Nat King Cole Trio - All I Want For Christmas (Is My Two Front Teeth) (Visualizer).mp3",
-        img: "imgs/NatKingCole.jpg"
+        title: "I'll be Home for Christmas",
+        artist: "Michael Bublé",
+        music: "music/I'll Be Home for Christmas.mp3",
+        img: "imgs/MichaelBuble.jpg"
     },
     {
         title: "Silent Night",
@@ -307,6 +307,8 @@ const shuffle_music = music_list.sort((a, b) => 0.5 - Math.random());  //  Shuff
 
 let song = document.querySelector(".song");
 let album = document.querySelector(".album");
+
+let banner = document.querySelector(".container");
 
 let curr_track = document.createElement('audio');
 
@@ -364,4 +366,8 @@ function pauseTrack() {
 
 function playPause() {
     isPlaying ? pauseTrack() : playTrack();
+}
+
+function hide() {
+    banner.style.display == "none" ? banner.style.display = "flex" : banner.style.display = "none";
 }
