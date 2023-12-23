@@ -178,6 +178,126 @@ const music_list = [
         artist: "Bing Crosby, The Andrews Sisters",
         music: "music/Bing Crosby, The Andrews Sisters - Mele Kalikimaka.mp3",
         img: "imgs/BingCrosby.jpg"
+    },
+    {
+        title: "Frosty the Snowman",
+        artist: "The Ronettes",
+        music: "music/The Ronettes - Frosty the Snowman (Official Lyric Video).mp3",
+        img: "imgs/ChristmasGift.jpg"
+    },
+    {
+        title: "Caroling, Caroling",
+        artist: "Nat King Cole",
+        music: "music/Nat King Cole - Caroling, Caroling (Lyric Video).mp3",
+        img: "imgs/NatKingCole.jpg"
+    },
+    {
+        title: "Do You Hear What I Hear",
+        artist: "Bing Crosby",
+        music: "music/Bing Crosby - Do You Hear What I Hear_ (Lyric Video).mp3",
+        img: "imgs/BingCrosby.jpg"
+    },
+    {
+        title: "Happy Holidays / Holiday Season",
+        artist: "Andy Williams",
+        music: "music/Andy Williams - Happy Holiday  The Holiday Season (Official Audio).mp3",
+        img: "imgs/AndyWilliams.jpg"
+    },
+    {
+        title: "Silver Bells",
+        artist: "Bing Crosby",
+        music: "music/Bing Crosby - Silver Bells (Visualizer) ft. Carol Richards.mp3",
+        img: "imgs/BingCrosby.jpg"
+    },
+    {
+        title: "(There's No Place Like) Home for the Holidays",
+        artist: "Perry Como",
+        music: "music/Perry Como - (There's No Place Like) Home for the Holidays (Official Audio).mp3",
+        img: "imgs/PerryComo.jpg"
+    },
+    {
+        title: "O Come All Ye Faithful",
+        artist: "Nat King Cole",
+        music: "music/Nat King Cole - O Come All Ye Faithful (Official Music Video).mp3",
+        img: "imgs/NatKingCole.jpg"
+    },
+    {
+        title: "The First Noël",
+        artist: "Andy Williams",
+        music: "music/The First Noël.mp3",
+        img: "imgs/AndyWilliams.jpg"
+    },
+    {
+        title: "Baby, It's Cold Outside",
+        artist: "Dean Martin",
+        music: "music/Dean Martin - Baby, It's Cold Outside (Lyric Video).mp3",
+        img: "imgs/DeanMartin.jpg"
+    },
+    {
+        title: "O Little Town of Bethlehem",
+        artist: "Nat King Cole",
+        music: "music/Nat King Cole - O Little Town Of Bethlehem (Lyric Video).mp3",
+        img: "imgs/NatKingCole.jpg"
+    },
+    {
+        title: "I'll Be Home For Christmas",
+        artist: "Bing Crosby",
+        music: "music/Bing Crosby - I'll Be Home For Christmas (Visualizer).mp3",
+        img: "imgs/BingCrosby.jpg"
+    },
+    {
+        title: "Mistletoe And Holly",
+        artist: "Frank Sinatra",
+        music: "music/Frank Sinatra - Mistletoe And Holly (Official Video).mp3",
+        img: "imgs/FrankSinatra.jpg"
+    },
+    {
+        title: "O Christmas Tree",
+        artist: "Tony Bennett",
+        music: "music/Tony Bennett - O Christmas Tree (from A Swingin' Christmas).mp3",
+        img: "imgs/TonyBennett.jpg"
+    },
+    {
+        title: "Twelve Days of Christmas",
+        artist: "Bing Crosby, The Andrews Sisters",
+        music: "music/Bing Crosby & The Andrews Sisters - The Twelve Days Of Christmas.mp3",
+        img: "imgs/BingCrosby.jpg"
+    },
+    {
+        title: "Hark! The Herald Angels Sing",
+        artist: "Frank Sinatra",
+        music: "music/Frank Sinatra - Hark! The Herald Angels Sing (Visualizer).mp3",
+        img: "imgs/FrankSinatra.jpg"
+    },
+    {
+        title: "All I Want For Christmas (Is My Two Front Teeth)",
+        artist: "Nat King Cole Trio",
+        music: "music/Nat King Cole Trio - All I Want For Christmas (Is My Two Front Teeth) (Visualizer).mp3",
+        img: "imgs/NatKingCole.jpg"
+    },
+    {
+        title: "Silent Night",
+        artist: "Frank Sinatra",
+        music: "music/Frank Sinatra - Silent Night (Visualizer).mp3",
+        img: "imgs/FrankSinatra.jpg"
+    },
+    {
+        title: "Run Rudolph Run",
+        artist: "Chuck Berry",
+        music: "music/Chuck Berry - Run Rudolph Run (Official Video).mp3",
+        img: "imgs/ChuckBerry.jpg"
+    },
+    {
+        title: "This Christmas",
+        artist: "Donny Hathaway",
+        music: "music/Donny Hathaway - This Christmas (Official Audio).mp3",
+        img: "imgs/DonnyHathaway.jpg"
+    },
+    {
+        title: "Have Yourself A Merry Little Christmas",
+        artist: "Michael Bublé",
+        music: "music/Michael Bublé - Have Yourself A Merry Little Christmas [Official HD].mp3",
+        img: "imgs/MichaelBuble.png"
     }
 ]
 
