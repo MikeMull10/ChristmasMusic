@@ -1,4 +1,4 @@
-const music_list = [
+export const music_list = [
     {
         title: "Deck the Halls",
         artist: "Nat King Cole",

@@ -51,8 +51,8 @@
     document.addEventListener("keydown", e => {
         if (e.key.toUpperCase() === "F") { openFullscreen(); }
         else if (e.key.toUpperCase() === "K") { playPause(); }
-        else if (e.key.toUpperCase() === "J") { prevTrack(); }
-        else if (e.key.toUpperCase() === "L") { nextTrack(); }
+        else if (e.key.toUpperCase() === "J" || e.key === "MediaTrackPrevious") { prevTrack(); }
+        else if (e.key.toUpperCase() === "L" || e.key === "MediaTrackNext") { nextTrack(); }
         else if (e.key.toUpperCase() === "H") { hide(); }
     });
 </script>

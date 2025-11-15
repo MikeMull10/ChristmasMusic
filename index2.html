@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christmas Music</title>
+<link rel="icon" type="image/x-icon" href="snowflake.ico">
+<link rel="stylesheet" href="style.css">
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        font-family: sans-serif;
+        background: #000;
+        color: #fff;
+    }
+    #bgvid {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .container {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    img.album {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    input[type="range"] {
+        width: 200px;
+    }
+</style>
+</head>
+<body>
+
+<video playsinline autoplay muted loop id="bgvid">
+    <source src="Christmas Wallpaper.mp4" type="video/mp4">
+</video>
+
+<div class="container">
+    <img src="" class="album" alt="Album Cover">
+    <p class="song"></p>
+    <div>
+        Volume: <input type="range" min="0" max="1" step="0.01" value="0.5" id="volumeSlider">
+    </div>
+</div>
+
+<script type="module">
+    // --- Music List ---
+    import { music_list } from './music.js';
+
+    // --- Elements ---
+    let songText = document.querySelector(".song");
+    let albumImg = document.querySelector(".album");
+    let volumeSlider = document.getElementById("volumeSlider");
+
+    let curr_track = document.createElement('audio');
+    curr_track.volume = 0.5;
+
+    let track_index = 0;
+    let isPlaying = false;
+
+    // --- Load Track ---
+    function loadTrack(index) {
+        curr_track.src = music_list[index].music;
+        curr_track.load();
+        albumImg.src = music_list[index].img;
+        songText.textContent = `${music_list[index].title} by ${music_list[index].artist}`;
+        curr_track.addEventListener('ended', nextTrack);
+    }
+
+    // --- Play / Pause ---
+    function playTrack() { curr_track.play(); isPlaying = true; }
+    function pauseTrack() { curr_track.pause(); isPlaying = false; }
+    function playPause() { isPlaying ? pauseTrack() : playTrack(); }
+
+    // --- Next / Previous ---
+    function nextTrack() {
+        track_index = (track_index + 1) % music_list.length;
+        loadTrack(track_index);
+        playTrack();
+    }
+    function prevTrack() {
+        track_index = (track_index - 1 + music_list.length) % music_list.length;
+        loadTrack(track_index);
+        playTrack();
+    }
+
+    // --- Volume ---
+    volumeSlider.addEventListener("input", e => {
+        curr_track.volume = e.target.value;
+    });
+
+    // --- Fullscreen ---
+    function openFullscreen() {
+        let elem = document.documentElement;
+        if (elem.requestFullscreen) elem.requestFullscreen();
+        else if (elem.webkitRequestFullscreen) elem.webkitRequestFullscreen();
+        else if (elem.msRequestFullscreen) elem.msRequestFullscreen();
+    }
+
+    // --- Hide / Show ---
+    function hide() {
+        const container = document.querySelector(".container");
+        container.style.display = container.style.display === "none" ? "block" : "none";
+    }
+
+    // --- Key Controls ---
+    document.addEventListener("keydown", e => {
+        switch(e.key.toUpperCase()) {
+            case "F": openFullscreen(); break;
+            case "K": playPause(); break;
+            case "J": prevTrack(); break;
+            case "L": nextTrack(); break;
+            case "H": hide(); break;
+        }
+    });
+
+    // --- Media Session API ---
+    if ('mediaSession' in navigator) {
+        navigator.mediaSession.setActionHandler('play', playTrack);
+        navigator.mediaSession.setActionHandler('pause', pauseTrack);
+        navigator.mediaSession.setActionHandler('previoustrack', prevTrack);
+        navigator.mediaSession.setActionHandler('nexttrack', nextTrack);
+    }
+
+    // --- Initialize ---
+    loadTrack(track_index);
+    </script>
+
+    </body>
+</html>
